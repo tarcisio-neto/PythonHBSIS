@@ -8,11 +8,10 @@ print ('='*60)
 
 salario = float(input('{}Digite o salário líquido: '.format(' '*5)))
 
+#imprimir 
 
-# conta letras  digitadas 
 print('{}O salário líquido é:{} R${:.2f}'.format(' '*5,'.'*10, salario))
 
-#procura a letra do inicio para fim
 print('{}Gastos básicos:{} R${:.2f}'.format(' '*5,'.'*15, salario*0.5))
 
 print('{}Investimentos LP:{} R${:.2f}'.format(' '*5,'.'*13, salario*0.2))
