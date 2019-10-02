@@ -1,0 +1,52 @@
+body{
+    background: #eedada;
+}
+.cabecalho, .novo{
+    width: 60%;
+    margin: auto;
+   
+}
+.novo a{
+    color: #10cc10;
+    background: #fff;
+    text-transform: uppercase;
+    border: 1px solid #10cc10;
+    font-size: 0.875em;
+    padding: 0.375em 0.8em;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+.novo  a:hover{
+    background: #10cc10;
+    color: #fff;   
+    
+}
+table{
+    width: 60%;
+    margin: 1em auto;
+    background: #fff;
+    border-collapse: collapse;
+  
+}
+thead{
+    background: #000000;
+    color:#fff;
+}
+th{
+    height: 2em;
+    text-align: left;
+    padding: 0.5em 0 0 1em;
+    text-transform: uppercase;
+
+}
+td{
+    height: 1.5em;
+    padding: 0.5em 1em;
+    border: 1px solid #000000
+    
+}
+
+tbody tr:hover{
+    background: #e9dd3f
+}

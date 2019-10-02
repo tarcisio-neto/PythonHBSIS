@@ -1,0 +1,28 @@
+<html>
+    <head>
+            <title>{{ nome }}</title>
+            <link rel="stylesheet" href="../static/estilos_form_novo_aluno.css">
+    </head>
+        <title>
+
+        </title>
+        <body>
+            <div class = "cabecalho">
+                <h1>Novo Aluno</h1>  
+            </div>
+        <form action="/salvar" method="POST">
+            <label for="">Nome:</label> 
+            <input type="text" name = "nome"> <br/>
+          
+            <label for="">Sobrenome:</label>
+            <input type="text" name = "sobrenome"> <br/>
+           
+            <label for="">Telefone:</label>
+            <input type="text" name="telefone"> <br/>
+           
+            <hr/>
+
+            <input type="submit" value="Salvar">
+        </form>
+    </body>
+</html>
