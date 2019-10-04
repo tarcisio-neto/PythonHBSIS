@@ -1,0 +1,8 @@
+{% extends "index.html" %}
+{% block conteudo %}
+    <ul>
+        {% for i in lista %}
+            <li>{{ i.categoria  }} {{   '  |  '   }} {{ i.tipo  }}{{   '  |  '   }}{{ i.aporte  }} {{   '  |  '   }} {{ i.rentabilidade  }}</li>                    
+        {% endfor %}
+    </ul>
+{% endblock %}

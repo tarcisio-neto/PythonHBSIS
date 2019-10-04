@@ -1,0 +1,31 @@
+{% extends "index.html" %}
+{% block conteudo %}
+
+<div id="cadastrar">
+    <h1>Cadastrar Investimento</h1>
+    <form action="/salvar" method = "POST">
+        <div class="labels">
+            <label for="">Categoria</label>
+        </div>
+        <input type="text" name="categoria">
+        <div class="labels">
+            <label for="">Tipo</label>
+        </div>
+        <input type="text" name="tipo">
+        <div class="labels">
+            <label for="">Valor do Aporte</label>
+        </div>
+        <input type="text" name="aporte">
+        <div class="labels">
+            <label for="">Rentabilidade</label>
+        </div>
+        <input type="text" name="rentabilidade">
+        <div class="labels">
+                <label for="">Periodo Rentabilidade</label>
+            </div>
+            <input type="text" name="periodo">
+        <hr>
+        <input type= "submit" value= "Salvar">
+    </form>
+</div>
+{% endblock %}

@@ -26,9 +26,8 @@ def cadastrar():
     return render_template('cadastrar.html',  titulo_pagina = 'Cadastrar')
 
 #direciona a rota, defina a função
-@app.route('/fazer_pedido', methods = ['POST'])
+@app.route('/fazer_pedido', methods = ['GET'])
 def fazerpedido():
-    nome  = request.form['nome']
     return render_template('fazer_pedido.html',  titulo_pagina = 'Pedido')
 
  #direciona a rota, defina a função
