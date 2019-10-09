@@ -1,0 +1,25 @@
+{% extends "masterpage.html" %}
+{% block lendas %}
+    <h1>{{pagina_nome}}</h1>
+    
+
+    <div class="conteudo">
+        <table>
+                <thead>
+                    <tr>
+                        <th>CPF</th>
+                        <th>Nome</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for i in lista %}
+                    <tr>
+                        <td>{{i.cpf}}</td>
+                        <td>{{i.nome}}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>           
+    </div>
+
+{% endblock %}

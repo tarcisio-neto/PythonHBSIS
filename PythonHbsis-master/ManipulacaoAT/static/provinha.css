@@ -1,0 +1,65 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(219, 187, 82);
+    background-image: url("../static/gutinho\ topper.png");
+    background-position-y: 5em;
+}
+.cabecalho{
+    background: chartreuse;
+    width: 100%;
+    height: 5em;
+}
+
+.logo , .menu{
+    display: inline-block;
+}
+
+ul{
+    text-decoration:none;
+}
+
+.menu ul li:hover{
+    background: #670bc2;
+    font-style: italic;
+    color: #fd1f7c;
+    cursor: progress;
+}
+
+.menu ul li{
+    margin: 0 0.5em;
+    float:left;
+    border: #670bc2 1px solid;
+    color: rgb(12, 180, 12);
+    height: 2em;
+    width: 5em;
+}
+
+.logo img{
+    width: 5em;
+}
+
+.conteudo{
+    width: 60%;
+    margin: 2em auto 0;
+}
+table thead{
+    background: #000000;
+    color: #ffffff;
+    height: 4em;
+}
+table{
+    border-collapse: collapse;
+    
+}
+th{
+    padding: 0.5em 0.5em;
+    width: 15em;
+}
+td{
+    padding: 0.5em 0.5em;
+    font-size: 1em;
+    background: #f81919;
+    color: rgb(109, 185, 8);
+}

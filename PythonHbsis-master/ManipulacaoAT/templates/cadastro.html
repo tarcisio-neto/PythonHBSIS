@@ -1,0 +1,14 @@
+{% extends "masterpage.html" %}
+{% block lendas %}
+    <h1>{{pagina_nome}}</h1>
+    <a class= 'link' href="/">Volar para home</a>
+    <div>
+        <form action="/salvar-cadastro" method="POST">
+            <input name="nome" type="text" placeholder="Nome">
+            <input name="cpf" type="text" placeholder="CPF">
+
+            <button>Salvar</button>
+        </form>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>{{ nome }}</title>
+        <link rel="stylesheet" href="../static/estilos.css">
+    </head>
+    <body>
+        <div class="cabecalho">
+            <h1>{{ nome }}</h1>
+        </div>
+        <div class="novo">
+            <a href="/novo">Novo Aluno</a>
+        </div>
+        {% block conteudo %}{% endblock %}
+    </body>
+</html>

@@ -1,0 +1,19 @@
+    {% extends  "template-padrao.html" %}
+    {% block conteudo %}
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Telefone</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for a in lista %}
+                    <tr>
+                        <td>{{ a.nome_completo() }}</td>
+                        <td>{{ a.Telefone }}</td>                
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% endblock %}
