@@ -1,0 +1,38 @@
+{% extends "layoutzada.html" %}
+
+{% block index %}
+
+    <h1>Categorias</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>tipo</th>
+                <th>descrição</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in lista %}
+            
+                <tr>
+                    <td>{{i.id}}</td>
+                    <td>{{i.tipo}}</td>
+                    <td>{{i.descricao}}</td>
+                    <td>
+                        <a href="/categoria/delete?id={{i.id}}">Deletar</a>
+                        <a href="/categoria/alterar?id={{i.id}}">Alterar</a>
+                    </td>
+                
+                </tr>
+            {% endfor %}
+
+        </tbody>
+
+
+
+        
+    </table>
+
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends "layoutzada.html" %}
+
+{% block index %}
+
+    <h1>Categorias Alterar!</h1>
+    <a href="/categoria/lista">Listagem</a>
+    
+    <div class= "formulario">
+        <form action="/categoria/alterar/salvar" method="POST"> 
+            <input type="hidden" name="id" value="{{categoria.id}}">
+            <input class="input" type="text" placeholder="tipo" name="tipo" value="{{categoria.tipo}}" > 
+            <input class="input" type="text" placeholder="descrição" name="descricao" value="{{categoria.descricao}}">
+            <input type="submit" value="salvar">        
+        </form>
+
+    </div>
+
+{% endblock %}

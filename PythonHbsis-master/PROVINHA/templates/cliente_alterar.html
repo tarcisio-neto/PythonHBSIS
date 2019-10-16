@@ -1,0 +1,19 @@
+{% extends "layoutzada.html" %}
+
+{% block index %}
+
+    <h1>Clientes Alterar!</h1>
+    <a href="/cliente/lista">Listagem</a>
+    
+    <div class= "formulario">
+        <form action="/cliente/alterar/salvar" method="POST"> 
+            <input type="hidden" name="id" value="{{cliente.id}}">
+            <input class="input" type="text" placeholder="nome" name="nome" value="{{cliente.nome}}" > 
+            <input class="input" type="text" placeholder="cpf" name="cpf" value="{{cliente.cpf}}">
+            <input class="input" type="text" placeholder="data nascimento" name="nascimento" value="{{cliente.nascimento}}">
+            <input type="submit" value="salvar">        
+        </form>
+
+    </div>
+
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends "layoutzada.html" %}
+
+{% block index %}
+
+    <h1>Clientes!</h1>
+    <a href="/cliente/lista">Listagem</a>
+    
+    <div class= "formulario">
+        <form action="/cliente/salvar" method="POST"> 
+            <input class="input" type="text" placeholder="nome" name="nome"> 
+            <input class="input" type="text" placeholder="cpf" name="cpf">
+            <input class="input" type="text" placeholder="data nascimento" name="nascimento">
+            <input type="submit" value="salvar">
+
+        
+        </form>
+
+    </div>
+
+{% endblock %}

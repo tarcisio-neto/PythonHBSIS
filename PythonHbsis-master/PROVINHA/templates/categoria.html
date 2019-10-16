@@ -1,0 +1,19 @@
+{% extends "layoutzada.html" %}
+
+{% block index %}
+
+    <h1>Categorias!</h1>
+    <a href="/categoria/lista">Lista Categoria</a>
+    
+    <div class= "formulario">
+        <form action="/categoria/salvar" method="POST"> 
+            <input class="input" type="text" placeholder="tipo produto" name="tipo"> 
+            <input class="input" type="text" placeholder="descrição" name="descricao">
+            <input type="submit" value="salvar">
+
+        
+        </form>
+
+    </div>
+
+{% endblock %}

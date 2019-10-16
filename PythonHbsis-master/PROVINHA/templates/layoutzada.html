@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<head>
+
+    <title>{{nome_de_la_page}}</title>
+    <link rel="stylesheet" href="../static/layout.css">
+</head>
+
+<body>
+    <div class='cabecalho'>
+        <div class = "logo"> 
+            <a href="/">{{nome_de_la_page}}</a>
+        </div>
+        <div class= "menu">
+            <ul>
+                <li>
+                    <a href="/cliente">clientes</a>
+                </li>
+                <li>
+                    <a href="/compras">compras</a>
+                </li>
+                <li>
+                    <a href="/produtos">produtos</a>
+                </li>
+                <li>
+                    <a href="/categoria">categoria</a>
+                </li>
+                    
+            </ul>    
+        </div>
+
+    </div>
+    {% block index %}
+
+    {% endblock %}
+</body>
+
+</html>
